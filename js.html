@@ -1,0 +1,51 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<title>Calculation</title>
+		
+	</head>
+	<body style = "background-color:azure">
+		<h3>Calculation</h3>
+		
+		Num 1<input type="number" id ="1" class ="cls"><br><br>
+		Num 2<input type="number" id ="2" class ="cls"><br><br>
+		<input type ="button" value =" SUM " onclick="add()" style ="color:white; background-color:black;"/>&nbsp
+		<input type ="button" value =" SUB " onclick="sub()"style ="color:white; background-color:black;"/>&nbsp
+		<input type ="button" value =" MUL " onclick="mul()"style ="color:white; background-color:black; "/>&nbsp
+		<button  onclick="div()"style ="color:white; background-color:black; ">DIV</button>
+		
+		<p>Check the result.</p>
+		Result<input type="number"id ="res" style ="color:green; background-color:lightblue; "; >
+		<script>
+			function add()
+			{
+				var x = parseInt(document.getElementById("1").value);		
+				var y = parseInt(document.getElementById("2").value);
+						document.getElementById("res").value=(x+y);
+					
+			}
+			function sub()
+			{
+				var x = parseInt(document.getElementById("1").value);		
+				var y = parseInt(document.getElementById("2").value);
+						document.getElementById("res").value=(x-y);
+				
+			}
+			function mul()
+			{
+				var x = parseInt(document.getElementById("1").value);
+				var y = parseInt(document.getElementById("2").value);
+						document.getElementById("res").value=(x*y);
+				
+			}
+			function div()
+			{
+				var x = parseInt(document.getElementById("1").value);
+				var y = parseInt(document.getElementById("2").value);
+						document.getElementById("res").value=(x/y);
+				
+			}
+			
+		</script>
+	</body>
+</html>
